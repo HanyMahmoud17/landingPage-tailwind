@@ -9,3 +9,11 @@
 .title{
     @apply font-bold text-3xl md:text-4xl leading-snug;
 }
+
+.featureItem{
+    @apply border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200;
+}
+
+.texth4{
+    @apply text-color-secondary font-bold mb-4;
+}
