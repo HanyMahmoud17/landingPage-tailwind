@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply bg-color-secondary px-9 py-3 rounded-md font-bold hover:opacity-80 duration-200;
+}
+
+.title{
+    @apply font-bold text-3xl md:text-4xl leading-snug;
+}

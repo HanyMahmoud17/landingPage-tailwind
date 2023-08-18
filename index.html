@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Website</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fontAwsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-color-primary text-color-white tracking-wider">
+    <header>
+        <nav class="container flex justify-between items-center">
+            <div class="font-bold text-3xl py-5 text-color-secondary">
+                <a href="#home">
+                    <span class="text-color-white">light</span>code.
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
+                    <li><a href="#testimonial" class="hover:text-color-secondary ease-in duration-200">Testimonial</a>
+                    </li>
+                    <li><a href="#pricing" class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+                    <li><a href="#blog" class="hover:text-color-secondary ease-in duration-200">Blog</a></li>
+                    <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+
+                    <li><button
+                            class="bg-color-secondary px-9 py-3 rounded-md font-bold hover:opacity-80 duration-200">free
+                            trial</button></li>
+
+                </ul>
+            </div>
+
+            <!-- mobile icon  -->
+            <div id="hamburg" class="lg:hidden cursor-pointer z-40"><i class="fa-solid fa-bars"></i></div>
+
+            <!-- navigatiion link -->
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hlink" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hlink" href="#features"
+                            class="hover:text-color-secondary ease-in duration-200">Features</a></li>
+                    <li><a id="hlink" href="#testimonial"
+                            class="hover:text-color-secondary ease-in duration-200">Testimonial</a></li>
+                    <li><a id="hlink" href="#pricing"
+                            class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+                    <li><a id="hlink" href="#blog" class="hover:text-color-secondary ease-in duration-200">Blog</a></li>
+                    <li><a id="hlink" href="#contact"
+                            class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+
+                    <li><button
+                            class="btn">free
+                            trial</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="relative">
+
+            <div class="w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+            <div class="container py-20">
+                <div class="flex flex-col items-center md:flex-row">
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h1 class="title mb-4">
+                            Awesome App for Your Financial.
+                        </h1>
+                        <p class="leading-relaxed mb-10">
+                            This should be used to tell a story and let your users know a little more about app and it’s
+                            use, How can benefit them.
+                        </p>
+                        <button
+                            class="btn">Download
+                            app</button>
+                    </div>
+                    <div class="md:w-1/2 ">
+                        <img class="rounded-md" src="./img/img1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        const hamburg = document.getElementById('hamburg')
+        const menu = document.getElementById('menu')
+        const hlink = document.getElementById('hlink')
+        const fasolid = document.querySelector('.fa-solid')
+
+        hamburg.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            fasolid.classList.toggle('fa-xmark')
+        })
+
+        hlink.foreach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                fasolid.classList.toggle('fa-xmark')
+            })
+        })
+    </script>
+</body>
+
+</html>
