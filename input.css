@@ -5,7 +5,9 @@
 .btn{
     @apply bg-color-secondary px-9 py-3 rounded-md font-bold hover:opacity-80 duration-200;
 }
-
+.card_btn {
+    @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200;
+}
 .title{
     @apply font-bold text-3xl md:text-4xl leading-snug;
 }
@@ -16,4 +18,31 @@
 
 .texth4{
     @apply text-color-secondary font-bold mb-4;
+}
+
+.user-text{
+    display: none;
+}
+
+.user-text.active-text{
+    display: block;
+}
+
+.user-pic.active-pic{
+    border: 2px solid #ff7d3b;
+}
+
+/* for pricing */
+
+.card{
+    perspective: 1000px;
+}
+
+.front,
+.back{
+    backface-visibility: hidden;
+    transition: all 0.4s ease;
+}
+.front{
+    overflow: hidden;
 }
